@@ -1,9 +1,26 @@
+import { Racer } from "./Models/RacerModel.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 
 class AppState extends EventEmitter {
   /** @type {import('./Models/Value').Value[]} */
   values = []
+
+  racers = [
+    new Racer({
+      name: 'tom',
+      img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.qT4YZ0Pw5FTcX4vpDqXU8wHaIW%26pid%3DApi&f=1',
+      number: 1,
+      distance: 0,
+    }),
+    new Racer({
+      name: 'jerry',
+      img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.8H84922DcSx9EQr0FC6W0wHaHa%26pid%3DApi&f=1',
+      number: 1,
+      distance: 0
+    })
+  ]
+
 }
 
 export const ProxyState = new Proxy(new AppState(), {
