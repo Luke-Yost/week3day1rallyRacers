@@ -19,6 +19,18 @@ class AppState extends EventEmitter {
       number: 1,
       distance: 0
     })
+    new Racer({
+      name: 'Meeee',
+      img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.0en8Q0yCUed7m-w_Lo2_AwHaHa%26pid%3DApi&f=1',
+      number: 3,
+      distance: 1
+    })
+    new Racer({
+      name: 'DarthVader',
+      img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.AQSuFI-dsntTDkKmDZbymgHaIU%26pid%3DApi&f=1',
+      number: 4,
+      distance: 0
+    })
   ]
 
 }

@@ -9,4 +9,11 @@ export class Racer{
     this.distance = distance
 
   }
+
+  get Template(){
+    `
+      
+    `
+  }
+
 }
